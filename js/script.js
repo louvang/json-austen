@@ -1,19 +1,3 @@
-/* 
-Search for paragraphs that are <= 500 characters but >= 25 characters
-  - If the paragraph starts with a quote, then it must not end with a quote.
-If paragraph fits parameters, put it into an array as an object.
-  [
-    {
-      title: "Pride & Prejudice",
-      text: "Paragraph here"
-    }
-  ]
-
-Display the .json file in the textarea of the HTML page to copy and paste as a json file
-
-PARAGRAPH REGEX: /.*\n/g
-*/
-
 const austenFiles = [
   'js/textEmma.json',
   'js/textMansfieldPark.json',
@@ -54,6 +38,3 @@ generateBtn.addEventListener('click', (e) => {
     jsonTextarea.textContent = JSON.stringify(finalJson);
   }, 500);
 });
-
-// fetchPars(austenFiles[0]);
-// fetchAsync(austenFiles[0]);
